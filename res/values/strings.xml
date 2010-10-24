@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Save Me</string>
+    <string name="app_description">Save Me is an application that will save you from emergency situation.</string>
+    <string name="app_link">http://seoeun25.tistory.com/</string>
+    <string name="app_copyright">Seoeun all rights reserved.</string>
+    <string name="app_contact">seoeun25@gmail.com</string>
+    
+    <string name="saveme">Save Me</string>
+    <string name="contacts">Contacts</string>
+    <string name="settings">Settings</string>
+    <string name="info">Info</string>
+    
+    <string name="input_message">Input message.</string>
+</resources>
