@@ -5,7 +5,13 @@
     <ListView
         android:id="@+id/contacts_list"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:padding="5dp">
+        android:layout_height="fill_parent">
     </ListView>
+    <TextView
+        android:id="@+id/contacts_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:text="@string/msg_no_contacts"
+        android:visibility="gone"/>
 </FrameLayout>
