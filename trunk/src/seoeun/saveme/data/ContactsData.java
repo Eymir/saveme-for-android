@@ -13,11 +13,14 @@ import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.util.Log;
 
 
-public class ContactsData {
+public final class ContactsData {
     
     private static final String KEY_CONTACTS = "contacts";
     
     private static final String SEPARATOR = ",";
+    
+    private ContactsData() {
+    }
     
     public static List<Long> get(Context context) {
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
@@ -74,7 +77,7 @@ public class ContactsData {
             value = null;
         }
         
-        Log.d(ContactsData.class.getSimpleName(), "PUT: " + value);
+        Log.d(ContactsData.class.getSimpleName(), "SET: " + value);
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         preferences.edit().putString(KEY_CONTACTS, value).commit();
     }
