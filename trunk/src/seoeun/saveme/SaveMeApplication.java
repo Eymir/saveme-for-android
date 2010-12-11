@@ -80,7 +80,7 @@ public class SaveMeApplication extends Application {
             }
             Location loc = locationHelper.getBestLocation();
             if(loc != null) {
-                buf.append(" [").append(loc.toString()).append("]");
+                buf.append(" [").append(loc.getLongitude()).append(",").append(loc.getLatitude()).append("]");
             } else {
                 buf.append(" [Unknown Location]");
             }
