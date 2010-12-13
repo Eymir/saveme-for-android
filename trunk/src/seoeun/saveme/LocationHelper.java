@@ -5,6 +5,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 
 class LocationHelper {
 
@@ -21,7 +22,10 @@ class LocationHelper {
                 // Called when a new location is found by the network location
                 // provider.
                 if(isBetterLocation(location, bestLocation)) {
+                    Log.d("SaveMe", "Location updated: " + location);
                     bestLocation = location;
+                } else {
+                    Log.d("SaveMe", "Location ignored: " + location);
                 }
             }
 

@@ -23,6 +23,7 @@
     <!-- messages -->
     <string name="input_message">Input message.</string>
     <string name="msg_save_me">Save me!</string>
+    <string name="msg_unknown_location">I don\'t have any idea where i am...</string>
     <string name="msg_no_contacts">You don\'t have any contacts.\nTo add a contact to your list, press MENU button then press \'Add\' menu.</string>
     <string name="msg_no_contacts_outside">You don\'t have any contacts.\nGo to \'Contact\' tab and add contacts first.</string>
     <string name="msg_message_sent">Message sent successfully.</string>

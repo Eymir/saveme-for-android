@@ -25,7 +25,7 @@ public final class ContactsData {
     public static List<Long> get(Context context) {
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         String value = preferences.getString(KEY_CONTACTS, null);
-        Log.d(ContactsData.class.getSimpleName(), "GET: " + value);
+        Log.d("Save Me", "GET_CONTACTS: " + value);
         
         List<Long> contacts;
         if(value != null) {
@@ -77,7 +77,7 @@ public final class ContactsData {
             value = null;
         }
         
-        Log.d(ContactsData.class.getSimpleName(), "SET: " + value);
+        Log.d("Save Me", "SET_CONTACTS: " + value);
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         preferences.edit().putString(KEY_CONTACTS, value).commit();
     }

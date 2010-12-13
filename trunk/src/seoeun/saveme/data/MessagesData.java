@@ -14,12 +14,12 @@ public final class MessagesData {
     public static String get(Context context) {
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         String value = preferences.getString(KEY_MESSAGES, null);
-        Log.d(MessagesData.class.getSimpleName(), "GET: " + value);
+        Log.d("Save Me", "GET_MESSAGES: " + value);
         return value;
     }
     
     public static final void set(Context context, String value) {
-        Log.d(MessagesData.class.getSimpleName(), "SET: " + value);
+        Log.d("Save Me", "SET_MESSAGES: " + value);
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         preferences.edit().putString(KEY_MESSAGES, value).commit();
     }

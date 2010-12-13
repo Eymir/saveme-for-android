@@ -73,7 +73,7 @@ public class SaveMeApplication extends Application {
         if(contacts != null && !contacts.isEmpty()) {
             StringBuilder buf = new StringBuilder();
             String msg = MessagesData.get(this);
-            if(msg != null) {
+            if(msg != null && msg.length() > 0) {
                 buf.append(msg);
             } else {
                 buf.append(getString(R.string.msg_save_me));
@@ -82,7 +82,7 @@ public class SaveMeApplication extends Application {
             if(loc != null) {
                 buf.append(" [").append(loc.getLongitude()).append(",").append(loc.getLatitude()).append("]");
             } else {
-                buf.append(" [Unknown Location]");
+                buf.append(" [").append(getString(R.string.msg_unknown_location)).append("]");
             }
             msg = buf.toString();
             Log.d("SaveMe", "Send message '" + msg + "'.");
