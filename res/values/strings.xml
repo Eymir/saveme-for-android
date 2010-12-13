@@ -3,7 +3,7 @@
     <!-- app information -->
     <string name="app_name">Save Me</string>
     <string name="app_description">Save Me is an application that will save you from emergency situation.</string>
-    <string name="app_link">http://code.google.com/p/saveme-for-android/</string>
+    <string name="app_link"><!-- http://code.google.com/p/saveme-for-android/ --></string>
     <string name="app_copyright">Seoeun all rights reserved.</string>
     <string name="app_contact">seoeun25@gmail.com</string>
     
@@ -22,9 +22,14 @@
     
     <!-- messages -->
     <string name="input_message">Input message.</string>
-    <string name="msg_save_me">Save me!</string>
-    <string name="msg_unknown_location">I don\'t have any idea where i am...</string>
+    <string name="msg_save_me">[Emergency] %1$s Location: %2$s</string>
+    <string name="msg_save_me_default_message">Save me!</string>
+    <string name="msg_save_me_known_location">%1$s %2$s</string>
+    <string name="msg_save_me_unknown_location">Unknown.</string>
     <string name="msg_no_contacts">You don\'t have any contacts.\nTo add a contact to your list, press MENU button then press \'Add\' menu.</string>
     <string name="msg_no_contacts_outside">You don\'t have any contacts.\nGo to \'Contact\' tab and add contacts first.</string>
     <string name="msg_message_sent">Message sent successfully.</string>
+
+    <!-- etc -->
+    <string name="url_maps">http://maps.google.com/maps?q=</string>
 </resources>

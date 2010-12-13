@@ -3,14 +3,14 @@ package seoeun.saveme.data;
 import java.util.ArrayList;
 import java.util.List;
 
+import seoeun.saveme.SaveMeLogger;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
-import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
-import android.util.Log;
+import android.provider.ContactsContract.Contacts;
 
 
 public final class ContactsData {
@@ -25,7 +25,7 @@ public final class ContactsData {
     public static List<Long> get(Context context) {
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         String value = preferences.getString(KEY_CONTACTS, null);
-        Log.d("Save Me", "GET_CONTACTS: " + value);
+        SaveMeLogger.d("GET_CONTACTS: " + value);
         
         List<Long> contacts;
         if(value != null) {
@@ -77,7 +77,7 @@ public final class ContactsData {
             value = null;
         }
         
-        Log.d("Save Me", "SET_CONTACTS: " + value);
+        SaveMeLogger.d("SET_CONTACTS: " + value);
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         preferences.edit().putString(KEY_CONTACTS, value).commit();
     }

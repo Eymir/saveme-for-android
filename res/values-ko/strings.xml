@@ -3,7 +3,7 @@
     <!-- app information -->
     <string name="app_name">도와주세요</string>
     <string name="app_description">\'도와주세요\'는 긴급상황에 처한 당신을 도와주는 앱입니다. 긴급 연락처를 등록해두고 연락이 필요한 경우 터치 한 번으로 메시지를 전송하세요. 메시지와 함께 현재 위치(경도, 위도)도 같이 전송됩니다.</string>
-    <string name="app_link">http://code.google.com/p/saveme-for-android/</string>
+    <string name="app_link"><!-- http://code.google.com/p/saveme-for-android/ --></string>
     <string name="app_copyright">Seoeun all rights reserved.</string>
     <string name="app_contact">seoeun25@gmail.com</string>
     
@@ -22,9 +22,14 @@
     
     <!-- messages -->
     <string name="input_message">메시지 입력</string>
-    <string name="msg_save_me">도와주세요!</string>
-    <string name="msg_unknown_location">그런데 여기가 어딘지 모르겠어요...</string>
+    <string name="msg_save_me">[긴급] %1$s 위치: %2$s</string>
+    <string name="msg_save_me_default_message">도와주세요!</string>
+    <string name="msg_save_me_known_location">%1$s %2$s</string>
+    <string name="msg_save_me_unknown_location">알 수 없음.</string>
     <string name="msg_no_contacts">등록된 연락처가 없습니다.\n연락처를 등록하려면 \'메뉴\' 버튼을 누르고, \'추가\'를 선택하세요.</string>
     <string name="msg_no_contacts_outside">등록된 연락처가 없습니다.\n\'연락처\' 탭으로 가서 연락처를 등록하세요.</string>
     <string name="msg_message_sent">메시지가 전송되었습니다.</string>
+
+    <!-- etc -->
+    <string name="url_maps">http://maps.google.com/maps?q=%1$f,%2$f</string>
 </resources>
