@@ -7,7 +7,7 @@
         android:id="@+id/btn_saveme"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:textSize="72dip"
+        android:textSize="56sp"
         android:text="@string/saveme">
     </Button>
 </FrameLayout>

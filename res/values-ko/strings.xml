@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app information -->
+    <string name="app_name">Save Me</string>
+    <string name="app_description">Save Me is an application that will save you from emergency situation.</string>
+    <string name="app_link">http://code.google.com/p/saveme-for-android/</string>
+    <string name="app_copyright">Seoeun all rights reserved.</string>
+    <string name="app_contact">seoeun25@gmail.com</string>
+    
+    <!-- tabs -->
+    <string name="saveme">도와주세요!</string>
+    <string name="contacts">연락처</string>
+    <string name="settings">설정</string>
+    <string name="info">정보</string>
+    
+    <!-- menu -->
+    <string name="add">추가</string>
+    <string name="delete">삭제</string>
+    
+    <!-- labels -->
+    <string name="send_message">메시지 전송</string>
+    
+    <!-- messages -->
+    <string name="input_message">메시지 입력</string>
+    <string name="msg_save_me">도와주세요!</string>
+    <string name="msg_unknown_location">그런데 여기가 어딘지 모르겠어요...</string>
+    <string name="msg_no_contacts">등록된 연락처가 없습니다.\n연락처를 등록하려면 \'메뉴\' 버튼을 누르고, \'추가\'를 선택하세요.</string>
+    <string name="msg_no_contacts_outside">등록된 연락처가 없습니다.\n\'연락처\' 탭으로 가서 연락처를 등록하세요.</string>
+    <string name="msg_message_sent">메시지가 전송되었습니다.</string>
+</resources>
