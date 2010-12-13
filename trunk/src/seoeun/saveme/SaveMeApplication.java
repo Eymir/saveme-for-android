@@ -82,7 +82,7 @@ public class SaveMeApplication extends Application {
             if(loc != null) {
                 buf.append(" [").append(loc.getLongitude()).append(",").append(loc.getLatitude()).append("]");
             } else {
-                buf.append(" [").append(getString(R.string.msg_unknown_location)).append("]");
+                buf.append(" ").append(getString(R.string.msg_unknown_location));
             }
             msg = buf.toString();
             Log.d("SaveMe", "Send message '" + msg + "'.");
