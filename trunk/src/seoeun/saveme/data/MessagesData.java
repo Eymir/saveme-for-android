@@ -1,8 +1,8 @@
 package seoeun.saveme.data;
 
+import seoeun.saveme.SaveMeLogger;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 public final class MessagesData {
 
@@ -14,12 +14,12 @@ public final class MessagesData {
     public static String get(Context context) {
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         String value = preferences.getString(KEY_MESSAGES, null);
-        Log.d("Save Me", "GET_MESSAGES: " + value);
+        SaveMeLogger.d("GET_MESSAGES: " + value);
         return value;
     }
     
     public static final void set(Context context, String value) {
-        Log.d("Save Me", "SET_MESSAGES: " + value);
+    	SaveMeLogger.d("SET_MESSAGES: " + value);
         SharedPreferences preferences = SaveMePreferences.getInstance(context);
         preferences.edit().putString(KEY_MESSAGES, value).commit();
     }
